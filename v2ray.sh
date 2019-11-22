@@ -10,8 +10,8 @@ yum -y install lrzsz
 
 rz
 
-cp ./iptables ${iptabpath}
-cp ./config.json ${v2cpath}
+cp ./iptables /etc/sysconfig/iptables
+cp ./config.json /etc/v2ray/config.json
 
 systemctl restart iptables
 systemctl start v2ray
