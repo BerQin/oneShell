@@ -1,3 +1,5 @@
+#!/bin/bash
+
 v2cpath = '/etc/v2ray/config.json'
 iptabpath = '/etc/sysconfig/iptables'
 
