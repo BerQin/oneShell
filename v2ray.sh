@@ -8,12 +8,9 @@ bash <(curl -L -s https://install.direct/go.sh)
 yum install iptables
 yum -y install lrzsz
 
-rz
-
 cp ./iptables /etc/sysconfig/iptables
 cp ./config.json /etc/v2ray/config.json
 
 systemctl restart iptables
 systemctl start v2ray
-
 systemctl status v2ray
